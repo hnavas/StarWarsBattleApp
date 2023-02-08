@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 340vh;
+}
+
+.containerCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(239, 240, 240, 0.17);
+  border-radius: 15px;
+  margin: 10px 85px;
+  border: solid 1px black;
+}
+
+.containerLoading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(12, 8, 1, 0.252);
+  border-radius: 15px;
+  margin: 20px 85px;
+}
+
+.loading {
+  width: 350px;
+  height: 600px;
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 35px;
+}
+
+.loadingSkeleton {
+  background-image: 
+  linear-gradient(90deg, #ccc 0px,
+  rgb(229 229 229/ 90%) 80px,
+  #ccc 80px);
+  background-size: 300%;
+  background-position: 100% 0;
+  border-radius: inherit;
+  animation: shimmer 1.2s infinite;
+}
+
+.titleSkeleton {
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.descriptionSkeleton {
+  height: 520px;
+}
+@keyframes shimmer {
+  to {
+    background-position: -100% 0;
+  }
+}
